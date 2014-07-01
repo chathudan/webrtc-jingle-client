@@ -74,6 +74,7 @@ public class AddConnectionActivity
         connection.setXmppUseSsl( Boolean.valueOf( mXmppUseSsl.getText().toString() ) );
         connection.setStunHost( mStunHost.getText().toString() );
         connection.setStunPort( Integer.valueOf( mStunPort.getText().toString() ) );
+        // set this to false if you connect to your own jabber server like ejabberd 
         connection.setIsGtalk( true );
 
         AuthenticationTask mAuthenticationTask = new AuthenticationTask( this )
